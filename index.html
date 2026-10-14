@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wedding Countdown | Forever Begins Soon</title>
+  <meta name="description" content="An elegant, luxury interactive wedding countdown counter celebrating the union of two hearts.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="champagne">
+  <!-- Dynamic Particle / Petal Canvas -->
+  <canvas id="sparkle-canvas"></canvas>
+
+  <!-- Top Action Bar (Apple Frosted Sticky Navigation) -->
+  <header class="top-nav" role="banner">
+    <a href="#wedding-counter" class="brand-monogram" id="monogram-badge" title="Jaswanth & Lalitha" aria-label="Jaswanth & Lalitha Wedding Home">
+      <span>J</span>
+      <span class="ampersand">&amp;</span>
+      <span>L</span>
+    </a>
+
+    <!-- Screen Navigation Switcher -->
+    <nav class="nav-segment-control" aria-label="Section Navigation">
+      <a href="#wedding-counter" class="segment-btn active" id="nav-btn-counter" role="button">
+        <span>💍 Countdown</span>
+      </a>
+      <a href="#couple-gallery" class="segment-btn" id="nav-btn-gallery" role="button">
+        <span>📸 Couple Photos</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Main Hero Countdown Section -->
+  <main class="hero-section" id="wedding-counter">
+    <div class="apple-container hero-container">
+      
+      <header class="hero-header">
+        <span class="hero-eyebrow" id="display-subtitle">THE WEDDING CELEBRATION</span>
+        <h1 class="hero-headline" id="display-names">Jaswanth &amp; Lalitha</h1>
+        <p class="hero-lead" id="display-date-string">Sunday, November 22, 2026 • 9:30 PM</p>
+        <a href="https://maps.google.com/?q=RVR+Conventions+Nowroji+Rd+Daspalla+Hills+Visakhapatnam+Andhra+Pradesh+530002" target="_blank" rel="noopener noreferrer" class="hero-venue-badge" title="RVR Conventions, Nowroji Rd, Daspalla Hills, Visakhapatnam — Open Google Maps Directions" aria-label="Venue: RVR Conventions, Daspalla Hills, Visakhapatnam. Open Google Maps.">
+          <svg class="venue-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span class="venue-name">RVR Conventions</span>
+          <span class="venue-dot" aria-hidden="true">·</span>
+          <span class="venue-address"><span class="venue-locality">Daspalla Hills, </span>Visakhapatnam</span>
+          <svg class="venue-arrow" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17L17 7"></path>
+            <path d="M7 7h10v10"></path>
+          </svg>
+        </a>
+      </header>
+
+      <!-- Precision Countdown Display -->
+      <section class="apple-countdown-wrapper" aria-label="Wedding Countdown">
+        <div class="apple-countdown-grid">
+          
+          <!-- Days -->
+          <div class="apple-time-card" id="box-days">
+            <span class="apple-time-digit" id="val-days">00</span>
+            <span class="apple-time-label">DAYS</span>
+          </div>
+
+          <div class="apple-time-divider" aria-hidden="true">:</div>
+
+          <!-- Hours -->
+          <div class="apple-time-card" id="box-hours">
+            <span class="apple-time-digit" id="val-hours">00</span>
+            <span class="apple-time-label">HOURS</span>
+          </div>
+
+          <div class="apple-time-divider" aria-hidden="true">:</div>
+
+          <!-- Minutes -->
+          <div class="apple-time-card" id="box-minutes">
+            <span class="apple-time-digit" id="val-minutes">00</span>
+            <span class="apple-time-label">MINUTES</span>
+          </div>
+
+          <div class="apple-time-divider" aria-hidden="true">:</div>
+
+          <!-- Seconds -->
+          <div class="apple-time-card card-accent-second" id="box-seconds">
+            <span class="apple-time-digit" id="val-seconds">00</span>
+            <span class="apple-time-label">SECONDS</span>
+          </div>
+
+        </div>
+
+        <p class="hero-quote" id="display-quote">
+          "Two souls with but a single thought, two hearts that beat as one."
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       COUPLE PHOTO SHOWCASE SECTION ("Our Story.")
+       ========================================================================== -->
+  <section class="apple-showcase-section couple-gallery-section" id="couple-gallery">
+    <div class="apple-container gallery-container">
+      
+      <!-- Section Header Typography & Apple Paddle Controls -->
+      <header class="apple-header gallery-header-row">
+        <div class="header-text-group">
+          <h2 class="apple-title">Our Story.</h2>
+          <p class="apple-desc">
+            A glimpse into our favorite moments together.
+          </p>
+        </div>
+
+        <!-- Apple Frosted Circle Paddle Controls -->
+        <div class="apple-carousel-controls" aria-label="Gallery Controls">
+          <button class="carousel-paddle-btn prev" id="gallery-prev-btn" aria-label="Previous photo" title="Previous photo" disabled>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-paddle-btn next" id="gallery-next-btn" aria-label="Next photo" title="Next photo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Apple Horizontal Scroll Gallery Viewport -->
+      <div class="apple-scroller-viewport" id="gallery-scroller" tabindex="0" role="region" aria-label="Couple photo slider">
+        <div class="apple-scroll-track" id="gallery-track">
+          
+          <!-- Slide 1: Engagement Day -->
+          <article class="apple-photo-slide" data-slide-index="0">
+            <div class="slide-media" tabindex="0" role="button" aria-label="View photo: The Promise in the Garden">
+              <img src="assets/couple_engagement.jpg" alt="Jaswanth & Lalitha - Garden Engagement" class="slide-img" loading="lazy" />
+              <div class="slide-badge-top">
+                <span class="slide-pill-badge">❤️ Engagement Day</span>
+              </div>
+              <div class="slide-tap-hint">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Full</span>
+              </div>
+            </div>
+            <div class="slide-caption">
+              <p class="slide-editorial-text">
+                <strong class="slide-lead">The Promise in the Garden.</strong>
+                Surrounded by blooming roses and warm sunset bokeh, where our forever quietly began.
+              </p>
+            </div>
+          </article>
+
+          <!-- Slide 2: Two Hands, One Vow -->
+          <article class="apple-photo-slide" data-slide-index="1">
+            <div class="slide-media" tabindex="0" role="button" aria-label="View photo: Two Hands, One Vow">
+              <img src="assets/couple_ring.jpg" alt="Two Hands, One Vow" class="slide-img" loading="lazy" />
+              <div class="slide-badge-top">
+                <span class="slide-pill-badge">💍 The Promise</span>
+              </div>
+              <div class="slide-tap-hint">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Full</span>
+              </div>
+            </div>
+            <div class="slide-caption">
+              <p class="slide-editorial-text">
+                <strong class="slide-lead">Two Hands, One Vow.</strong>
+                A sparkling reminder of love, sacred devotion, and a promise that will never fade.
+              </p>
+            </div>
+          </article>
+
+          <!-- Slide 3: By the Ocean Tide -->
+          <article class="apple-photo-slide" data-slide-index="2">
+            <div class="slide-media" tabindex="0" role="button" aria-label="View photo: By the Ocean Tide">
+              <img src="assets/couple_beach.jpg" alt="Walking along the sunset beach" class="slide-img" loading="lazy" />
+              <div class="slide-badge-top">
+                <span class="slide-pill-badge">🌊 Sunset Walk</span>
+              </div>
+              <div class="slide-tap-hint">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Full</span>
+              </div>
+            </div>
+            <div class="slide-caption">
+              <p class="slide-editorial-text">
+                <strong class="slide-lead">By the Ocean Tide.</strong>
+                Walking hand in hand through the golden shores, whispering dreams for the future.
+              </p>
+            </div>
+          </article>
+
+          <!-- Slide 4: Coffee & Endless Laughter -->
+          <article class="apple-photo-slide" data-slide-index="3">
+            <div class="slide-media" tabindex="0" role="button" aria-label="View photo: Coffee & Endless Laughter">
+              <img src="assets/couple_candid.jpg" alt="Candid laughter at cafe" class="slide-img" loading="lazy" />
+              <div class="slide-badge-top">
+                <span class="slide-pill-badge">☕ Sweet Beginnings</span>
+              </div>
+              <div class="slide-tap-hint">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Full</span>
+              </div>
+            </div>
+            <div class="slide-caption">
+              <p class="slide-editorial-text">
+                <strong class="slide-lead">Coffee &amp; Endless Laughter.</strong>
+                From our very first conversations where hours blurred into minutes of pure joy.
+              </p>
+            </div>
+          </article>
+
+          <!-- Slide 5: Laughter on the Mandap -->
+          <article class="apple-photo-slide" data-slide-index="4">
+            <div class="slide-media" tabindex="0" role="button" aria-label="View photo: Laughter on the Mandap">
+              <img src="assets/couple_festive.jpg" alt="Wedding mandap smiles" class="slide-img" loading="lazy" />
+              <div class="slide-badge-top">
+                <span class="slide-pill-badge">✨ Sacred Mandap</span>
+              </div>
+              <div class="slide-tap-hint">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Full</span>
+              </div>
+            </div>
+            <div class="slide-caption">
+              <p class="slide-editorial-text">
+                <strong class="slide-lead">Laughter on the Mandap.</strong>
+                Surrounded by family, fragrant marigolds, and sacred blessings as we unite as one.
+              </p>
+            </div>
+          </article>
+
+          <!-- Slide 6: Under the Fairy Canopy -->
+          <article class="apple-photo-slide" data-slide-index="5">
+            <div class="slide-media" tabindex="0" role="button" aria-label="View photo: Under the Fairy Canopy">
+              <img src="assets/couple_lights.jpg" alt="Jaswanth and Lalitha under golden fairy lights" class="slide-img" loading="lazy" />
+              <div class="slide-badge-top">
+                <span class="slide-pill-badge">✨ Golden Lights</span>
+              </div>
+              <div class="slide-tap-hint">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Full</span>
+              </div>
+            </div>
+            <div class="slide-caption">
+              <p class="slide-editorial-text">
+                <strong class="slide-lead">Under the Fairy Canopy.</strong>
+                Golden hour smiles surrounded by sparkling canopy lights, warmth, and joyous company.
+              </p>
+            </div>
+          </article>
+
+          <!-- Slide 7: Colors & Starlit Beats -->
+          <article class="apple-photo-slide" data-slide-index="6">
+            <div class="slide-media" tabindex="0" role="button" aria-label="View photo: Colors, Henna & Starlit Beats">
+              <img src="assets/couple_mehendi.jpg" alt="Mehendi Sangeet Evening" class="slide-img" loading="lazy" />
+              <div class="slide-badge-top">
+                <span class="slide-pill-badge">🌸 Mehendi Sangeet</span>
+              </div>
+              <div class="slide-tap-hint">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Full</span>
+              </div>
+            </div>
+            <div class="slide-caption">
+              <p class="slide-editorial-text">
+                <strong class="slide-lead">Colors &amp; Starlit Beats.</strong>
+                Swinging under glowing fairy lights, drenched in laughter and joyful melodies.
+              </p>
+            </div>
+          </article>
+
+          <!-- Slide 8: A Lifetime Together -->
+          <article class="apple-photo-slide" data-slide-index="7">
+            <div class="slide-media" tabindex="0" role="button" aria-label="View photo: A Lifetime Together">
+              <img src="assets/couple_walk.jpg" alt="Jaswanth and Lalitha walking together in garden" class="slide-img" loading="lazy" />
+              <div class="slide-badge-top">
+                <span class="slide-pill-badge">🥂 Forever Begins</span>
+              </div>
+              <div class="slide-tap-hint">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+                <span>View Full</span>
+              </div>
+            </div>
+            <div class="slide-caption">
+              <p class="slide-editorial-text">
+                <strong class="slide-lead">A Lifetime Together.</strong>
+                Walking hand in hand towards tomorrow, two souls celebrating eternal devotion.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Apple Carousel Progress Indicators (Pills / Dots) -->
+      <div class="carousel-indicators-bar" id="gallery-dots" aria-label="Photo carousel pagination"></div>
+
+      <!-- Photo Upload / Gallery Actions -->
+      <div class="gallery-footer-actions">
+        <label for="user-photo-upload" class="pill-action-btn upload-trigger-btn" title="Add your own photos">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="17 8 12 3 7 8"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15"></line>
+          </svg>
+          <span>Upload Custom Photos</span>
+        </label>
+        <input type="file" id="user-photo-upload" accept="image/*" multiple class="hidden">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Apple-inspired Minimal Wedding Footer -->
+  <footer class="wedding-footer" role="contentinfo">
+    <div class="apple-container footer-container">
+      <div class="footer-monogram-tag">J &amp; L</div>
+      <div class="footer-names">Jaswanth &amp; Lalitha</div>
+      <p class="footer-datetime">Sunday, November 22, 2026 • 9:30 PM</p>
+      <a href="https://maps.google.com/?q=RVR+Conventions+Nowroji+Rd+Daspalla+Hills+Visakhapatnam+Andhra+Pradesh+530002" target="_blank" rel="noopener noreferrer" class="footer-venue-link" title="RVR Conventions, Nowroji Rd, Daspalla Hills, Visakhapatnam — Open Google Maps Directions">
+        <svg class="venue-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <span>RVR Conventions · Daspalla Hills, Visakhapatnam</span>
+        <svg class="venue-arrow" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17L17 7"></path>
+          <path d="M7 7h10v10"></path>
+        </svg>
+      </a>
+      <p class="footer-note">Forever begins here.</p>
+    </div>
+  </footer>
+
+  <!-- Fullscreen Photo Lightbox Modal -->
+  <div class="lightbox-backdrop" id="photo-lightbox">
+    <div class="lightbox-container">
+      <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-nav-btn prev-btn" id="lightbox-prev-btn" aria-label="Previous Photo">&#10094;</button>
+      <button class="lightbox-nav-btn next-btn" id="lightbox-next-btn" aria-label="Next Photo">&#10095;</button>
+      
+      <div class="lightbox-image-wrap">
+        <img src="" alt="Couple Photo" id="lightbox-img" class="lightbox-img">
+      </div>
+
+      <div class="lightbox-caption-bar">
+        <h3 id="lightbox-title">Photo Title</h3>
+        <p id="lightbox-desc">Photo Description</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast-message" role="alert">Link copied to clipboard!</div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
