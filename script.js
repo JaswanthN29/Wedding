@@ -651,67 +651,95 @@
   // --- Couple Photos Gallery & Lightbox ---
   const COUPLE_PHOTOS = [
     {
-      id: 'engagement',
-      img: 'assets/couple_engagement.jpg',
-      title: 'The Promise in the Garden',
-      badge: '❤️ Engagement Day',
-      desc: 'Surrounded by blooming roses and warm sunset bokeh, our forever quietly began.'
+      id: 'connection',
+      img: 'assets/2.png',
+      title: 'Connection ❤️',
+      badge: 'Connection ❤️',
+      desc: 'Jaswanth & Lalitha'
     },
     {
-      id: 'ring',
-      img: 'assets/couple_ring.jpg',
-      title: 'Two Hands, One Vow',
-      badge: '💍 The Promise',
-      desc: 'A sparkling reminder of love, devotion, and a promise that will never fade.'
+      id: 'together',
+      img: 'assets/4.png',
+      title: 'Together ❤️',
+      badge: 'Together ❤️',
+      desc: 'Jaswanth & Lalitha'
     },
     {
-      id: 'beach',
-      img: 'assets/couple_beach.jpg',
-      title: 'By the Ocean Tide',
-      badge: '🌊 Sunset Walk',
-      desc: 'Walking hand in hand through the golden shores, whispering dreams for the future.'
+      id: 'chemistry',
+      img: 'assets/7.png',
+      title: 'Chemistry ❤️',
+      badge: 'Chemistry ❤️',
+      desc: 'Jaswanth & Lalitha'
     },
     {
-      id: 'coffee',
-      img: 'assets/couple_candid.jpg',
-      title: 'Coffee & Endless Laughter',
-      badge: '☕ Sweet Beginnings',
-      desc: 'From our very first conversations where minutes blurred into hours of joy.'
+      id: 'romance',
+      img: 'assets/6.png',
+      title: 'Romance ❤️',
+      badge: 'Romance ❤️',
+      desc: 'Jaswanth & Lalitha'
     },
     {
-      id: 'wedding-joy',
-      img: 'assets/couple_festive.jpg',
-      title: 'Laughter on the Mandap',
-      badge: '✨ Sacred Mandap',
-      desc: 'Surrounded by family, fragrant marigolds, and sacred blessings as we unite as one.'
+      id: 'promise',
+      img: 'assets/9.png',
+      title: 'Promise ❤️',
+      badge: 'Promise ❤️',
+      desc: 'Jaswanth & Lalitha'
     },
     {
-      id: 'fairy-lights',
-      img: 'assets/couple_lights.jpg',
-      title: 'Under the Fairy Canopy',
-      badge: '✨ Golden Lights',
-      desc: 'Golden hour smiles surrounded by sparkling fairy lights, warmth, and joyous company.'
-    },
-    {
-      id: 'pure-romance',
-      img: 'assets/couple_ring.jpg',
-      title: 'Pure Devotion',
-      badge: '🕊️ Two Hearts',
-      desc: 'Two hands intertwined with sacred vows, where every heartbeat whispers forever.'
-    },
-    {
-      id: 'mehendi',
-      img: 'assets/couple_mehendi.jpg',
-      title: 'Colors, Henna & Starlit Beats',
-      badge: '🌸 Mehendi Sangeet',
-      desc: 'Swinging under glowing fairy lights, drenched in laughter and joyful melodies.'
+      id: 'commitment',
+      img: 'assets/10.png',
+      title: 'Commitment ❤️',
+      badge: 'Commitment ❤️',
+      desc: 'Jaswanth & Lalitha'
     },
     {
       id: 'forever',
-      img: 'assets/couple_walk.jpg',
-      title: 'A Lifetime Together',
-      badge: '🥂 Forever Begins',
-      desc: 'Walking gracefully hand in hand through the garden walkway towards our sacred vows.'
+      img: 'assets/11.png',
+      title: 'Forever ❤️',
+      badge: 'Forever ❤️',
+      desc: 'Jaswanth & Lalitha'
+    },
+    {
+      id: 'love',
+      img: 'assets/12.png',
+      title: 'Love ❤️',
+      badge: 'Love ❤️',
+      desc: 'Jaswanth & Lalitha'
+    },
+    {
+      id: 'grace',
+      img: 'assets/14.png',
+      title: 'Grace ❤️',
+      badge: 'Grace ❤️',
+      desc: 'Jaswanth & Lalitha'
+    },
+    {
+      id: 'elegance',
+      img: 'assets/13.png',
+      title: 'Elegance ❤️',
+      badge: 'Elegance ❤️',
+      desc: 'Jaswanth & Lalitha'
+    },
+    {
+      id: 'groom',
+      img: 'assets/15.png',
+      title: 'Groom ❤️',
+      badge: 'Groom ❤️',
+      desc: 'Jaswanth & Lalitha'
+    },
+    {
+      id: 'bride',
+      img: 'assets/16.png',
+      title: 'Bride ❤️',
+      badge: 'Bride ❤️',
+      desc: 'Jaswanth & Lalitha'
+    },
+    {
+      id: 'eternity',
+      img: 'assets/5.png',
+      title: 'Eternity ❤️',
+      badge: 'Eternity ❤️',
+      desc: 'Jaswanth & Lalitha'
     }
   ];
 

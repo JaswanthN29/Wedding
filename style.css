@@ -246,11 +246,113 @@ input, select, textarea, button {
   position: relative;
   z-index: 10;
   width: 100%;
-  background: var(--surface-page);
-  padding: clamp(60px, 8vw, 100px) var(--page-gutter) clamp(48px, 7vw, 84px);
+  background: url('assets/3.png') center center / cover no-repeat;
+  padding: clamp(80px, 10vw, 140px) var(--page-gutter) clamp(60px, 8vw, 100px);
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Dark cinematic overlay for text readability */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 12, 10, 0.55) 0%,
+    rgba(15, 12, 10, 0.65) 40%,
+    rgba(15, 12, 10, 0.75) 100%
+  );
+  z-index: 1;
+}
+
+/* Ensure hero content sits above the overlay */
+.hero-section .apple-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* --- Hero text overrides for dark background --- */
+.hero-section .hero-eyebrow {
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .hero-headline {
+  color: #FFFFFF;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
+}
+
+.hero-section .hero-lead {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Venue badge — frosted glass on dark bg */
+.hero-section .hero-venue-badge {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.hero-section .hero-venue-badge:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #FFFFFF;
+}
+
+.hero-section .hero-venue-badge .venue-name {
+  color: #FFFFFF;
+}
+
+.hero-section .hero-venue-badge .venue-dot {
+  color: var(--color-accent);
+}
+
+.hero-section .hero-venue-badge .venue-address {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Countdown cards — glassmorphism on dark bg */
+.hero-section .apple-time-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.hero-section .apple-time-card:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.hero-section .apple-time-digit {
+  color: #FFFFFF;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .card-accent-second .apple-time-digit {
+  color: #D4A843;
+}
+
+.hero-section .apple-time-label {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.hero-section .apple-time-divider {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Quote on dark bg */
+.hero-section .hero-quote {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
 }
 
 .apple-container {
@@ -595,7 +697,7 @@ input, select, textarea, button {
 .slide-media {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10.5;
+  aspect-ratio: 4 / 5;
   border-radius: 28px;
   overflow: hidden;
   background: var(--surface-subtle);
@@ -623,8 +725,13 @@ input, select, textarea, button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   display: block;
   transition: transform 750ms var(--ease-standard);
+}
+
+.slide-img.img-centered {
+  object-position: center center;
 }
 
 .slide-media:hover .slide-img {
