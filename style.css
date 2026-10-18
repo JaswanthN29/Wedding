@@ -793,26 +793,6 @@ input, select, textarea, button {
   transform: translateY(0);
 }
 
-/* Caption Below Card (Matches Apple Photographic Styles screenshot typography) */
-.slide-caption {
-  margin-top: 16px;
-  padding: 0 4px;
-}
-
-.slide-editorial-text {
-  font-family: var(--font-body);
-  font-size: 0.96rem;
-  line-height: 1.55;
-  color: var(--text-secondary);
-  letter-spacing: -0.006em;
-}
-
-.slide-lead {
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-right: 4px;
-}
-
 /* Carousel Indicators Bar */
 .carousel-indicators-bar {
   display: flex;
@@ -842,37 +822,6 @@ input, select, textarea, button {
   width: 28px;
   background: var(--color-accent);
   opacity: 1;
-}
-
-/* Gallery Footer / Upload Actions */
-.gallery-footer-actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: var(--space-8);
-}
-
-.upload-trigger-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--surface-page);
-  border: 1px solid var(--border-subtle);
-  padding: 12px 28px;
-  border-radius: var(--radius-control);
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: var(--text-primary);
-  cursor: pointer;
-  box-shadow: var(--shadow-subtle);
-  transition: all var(--duration-fast) var(--ease-standard);
-  min-height: 44px;
-}
-
-.upload-trigger-btn:hover {
-  transform: translateY(-1px);
-  border-color: var(--border-strong);
-  box-shadow: var(--shadow-card);
 }
 
 /* --------------------------------------------------------------------------
@@ -1272,12 +1221,6 @@ input, select, textarea, button {
 
   .slide-media {
     border-radius: 20px;
-    aspect-ratio: 16 / 11;
-  }
-
-  .slide-editorial-text {
-    font-size: 0.9rem;
-    line-height: 1.5;
   }
 
   .toast {

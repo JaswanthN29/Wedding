@@ -894,34 +894,6 @@
     if (e.target === photoLightbox) closeLightbox();
   });
 
-  // --- Custom Photo Upload Support ---
-  const userPhotoUpload = document.getElementById('user-photo-upload');
-  if (userPhotoUpload) {
-    userPhotoUpload.addEventListener('change', (e) => {
-      const files = Array.from(e.target.files);
-      if (!files.length) return;
-
-      const slides = document.querySelectorAll('.apple-photo-slide');
-      files.forEach((file, index) => {
-        if (index < slides.length) {
-          const reader = new FileReader();
-          reader.onload = (event) => {
-            const img = slides[index].querySelector('.slide-media img');
-            if (img) {
-              img.src = event.target.result;
-              if (COUPLE_PHOTOS[index]) {
-                COUPLE_PHOTOS[index].img = event.target.result;
-              }
-            }
-          };
-          reader.readAsDataURL(file);
-        }
-      });
-
-      showToast(`Uploaded ${files.length} custom couple photo(s)! 💕`);
-    });
-  }
-
   // --- Smooth Navigation Segment Switcher ---
   const navBtnCounter = document.getElementById('nav-btn-counter');
   const navBtnGallery = document.getElementById('nav-btn-gallery');
